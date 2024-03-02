@@ -16,8 +16,6 @@ static async Task Run(IServiceProvider services, string scope)
     Console.WriteLine($"{scope}...");
 
     using IServiceScope serviceScope = services.CreateScope();
-    IServiceProvider provider = serviceScope.ServiceProvider;
-
 }
 
 using var host = builder.Build();
